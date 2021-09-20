@@ -1,19 +1,18 @@
 <template>
-    <div>
+    <div class="mb-4">
         <ul class="nav justify-content-center bg-success">
             <li class="nav-item">
-                <router-link class="nav-link" :to="{name: 'home'}">Boolpress</router-link>
+                <router-link class="nav-link py-3" :to="{name: 'home'}">Boolpress</router-link>
             </li>
             <li class="nav-item">
-                <router-link class="nav-link" :to="{name: 'service'}">Servizi</router-link>
+                <router-link class="nav-link py-3" :to="{name: 'service'}">Servizi</router-link>
             </li>
             <li class="nav-item">
-                <router-link class="nav-link" :to="{name: 'contact'}">Contatti</router-link>
+                <router-link class="nav-link py-3" :to="{name: 'contact'}">Contatti</router-link>
             </li>
             <li class="nav-item">
-                <router-link class="nav-link" :to="{name: 'product'}">Prodotti</router-link>
-            </li>
-            
+                <router-link class="nav-link py-3" :to="{name: 'product'}">Prodotti</router-link>
+            </li>  
         </ul>
     </div>
 </template>
