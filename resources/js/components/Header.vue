@@ -2,13 +2,16 @@
     <div>
         <ul class="nav justify-content-center bg-success">
             <li class="nav-item">
-                <a class="nav-link disabled" aria-current="page" href="#">Boolpress</a>
+                <router-link class="nav-link" :to="{name: 'home'}">Boolpress</router-link>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">i Post</a>
+                <router-link class="nav-link" :to="{name: 'service'}">Servizi</router-link>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <router-link class="nav-link" :to="{name: 'contact'}">Contatti</router-link>
+            </li>
+            <li class="nav-item">
+                <router-link class="nav-link" :to="{name: 'product'}">Prodotti</router-link>
             </li>
             
         </ul>
