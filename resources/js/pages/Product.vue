@@ -7,7 +7,7 @@
                     <h5 class="card-title">{{post.title}}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{ dataImp(post.created_at) }}</h6>
                     <p class="card-text">{{smallText(post.article, 120)}}</p>
-                    <a href="#" class="card-link">Show more</a>
+                    <router-link class="card-link" :to="{name: 'product-detail', params: {slug:post.slug}}" >Show More</router-link>
                     
                 </div>
             </div>

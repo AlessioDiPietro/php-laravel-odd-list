@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Service from './pages/Service';
 import Contact from './pages/Contact';
 import Product from './pages/Product';
+import PostDet from './pages/PostDet';
 
 const router = new VueRouter({
     mode:'history',
@@ -30,6 +31,11 @@ const router = new VueRouter({
             path: '/i-nostri-prodotti',
             name: 'product',
             component: Product
+        },
+        {
+            path: '/i-nostri-prodotti/:slug',
+            name: 'product-detail',
+            component: PostDet
         }
     ]
 });
