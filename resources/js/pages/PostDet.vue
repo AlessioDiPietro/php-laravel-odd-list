@@ -7,7 +7,10 @@
             <div class="card-body">
                 <h5 class="card-title" v-if="ArrayDet.catory.name">{{ArrayDet.category.name}}</h5>
                 <p class="card-text">{{ArrayDet.article}}</p>
-                <span class="badge" v-for="(tag, index) in ArrayDet.tags" :key="index"></span>
+                <div v-if="ArrayDet.tags">
+
+                </div>
+                <span class="badge" v-for="(tag, index) in ArrayDet.tags" :key="index">{{tag.name}}</span>
                 
             </div>
         </div>

@@ -2016,6 +2016,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'PostDet',
   data: function data() {
@@ -38040,8 +38043,12 @@ var render = function() {
             _vm._v(_vm._s(_vm.ArrayDet.article))
           ]),
           _vm._v(" "),
+          _vm.ArrayDet.tags ? _c("div") : _vm._e(),
+          _vm._v(" "),
           _vm._l(_vm.ArrayDet.tags, function(tag, index) {
-            return _c("span", { key: index, staticClass: "badge" })
+            return _c("span", { key: index, staticClass: "badge" }, [
+              _vm._v(_vm._s(tag.name))
+            ])
           })
         ],
         2
